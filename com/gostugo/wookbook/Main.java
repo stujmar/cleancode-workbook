@@ -2,7 +2,12 @@ package com.gostugo.wookbook;
 import java.util.List;
 import java.util.ArrayList;
 
+
 public class Main {
+
+    int FLAGGED = 1;
+    int STATUS_VALUE = 5;
+    ArrayList<int[]> gameBoard;
 
     // BAD:
     int d; // elapsed time in days
