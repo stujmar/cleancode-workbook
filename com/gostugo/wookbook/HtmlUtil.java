@@ -1,20 +1,24 @@
 package com.gostugo.wookbook;
 import java.lang.String;
+import java.util.Dictionary;
+import java.util.HashMap;
 
 import com.gostugo.wookbook.entities.*;
 
 public class HtmlUtil {
 
   // Before
+  SuiteResponder suiteResponder = new SuiteResponder();
 
   public static String testableHtml( PageData pageData, boolean includeSuiteSetup) throws Exception {
+
     WikiPage wikiPage = pageData.getWikiPage();
     StringBuffer buffer = new StringBuffer();
     if (pageData.hasAttribute("Test")) {
     if (includeSuiteSetup) {
     WikiPage suiteSetup =
     PageCrawlerImpl.getInheritedPage(
-    SuiteResponder.SUITE_SETUP_NAME, wikiPage
+    suiteResponder.getSuiteSetupName(), wikiPage
     );
       if (suiteSetup != null) {
       WikiPagePath pagePath =
