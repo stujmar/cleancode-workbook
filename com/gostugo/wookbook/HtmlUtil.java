@@ -8,7 +8,7 @@ import com.gostugo.wookbook.entities.*;
 public class HtmlUtil {
 
   // Before
-  SuiteResponder suiteResponder = new SuiteResponder();
+   SuiteResponder suiteResponder = new SuiteResponder("Suite Setup");
 
   public static String testableHtml( PageData pageData, boolean includeSuiteSetup) throws Exception {
 

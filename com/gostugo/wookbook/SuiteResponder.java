@@ -1,11 +1,15 @@
 package com.gostugo.wookbook;
 
 public class SuiteResponder {
+  
+  private String SUITE_SETUP_NAME;
 
   // contructor
-  public SuiteResponder() {}
+  public SuiteResponder(String name) {
+    this.SUITE_SETUP_NAME = name;
+  }
   
-  private String SUITE_SETUP_NAME = "hello";
+
 
   public String getSuiteSetupName() {
     return SUITE_SETUP_NAME;
