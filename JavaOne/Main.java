@@ -27,7 +27,12 @@ public class Main {
     System.out.println("Enter your GPA: ");
     Scanner input = new Scanner(System.in);
     studentGPA = input.nextDouble();
-    System.out.println("Your GPA is " + studentGPA);
+
+    if (studentGPA >= 3.5) {
+      System.out.println("You are eligible to graduate.");
+    } else {
+      System.out.println("You are not eligible to graduate.");
+    }
     input.close();
 
   }
