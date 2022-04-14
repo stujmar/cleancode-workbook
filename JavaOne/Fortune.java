@@ -8,7 +8,7 @@ public class Fortune {
     System.out.println("Pick a number between one and ten.");
     Scanner input = new Scanner(System.in);
     int number = input.nextInt();
-    while (number =< 5) {
+    while (number <= 5) {
       System.out.println("You are unlucky.");
       System.out.println("Pick a number between one and ten.");
       number = input.nextInt();
