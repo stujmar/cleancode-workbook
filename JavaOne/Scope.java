@@ -1,7 +1,7 @@
 package JavaOne;
 
 public class Scope {
-
+  static int globalAge = 10;
   public static void main(String[] args) {
     int inputtedNum = 5;
     if (inputtedNum < 100) {
@@ -15,7 +15,8 @@ public class Scope {
       // Not in scope (not accessible) for favoriteNumber
     }
     // Not in scope (not accessible) for favoriteNumber
-    System.out.println("Still out of scope");
+    System.out.println("out of scope and out of if/else");
+    System.out.println(globalAge);
   }
 
 }
